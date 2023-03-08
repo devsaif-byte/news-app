@@ -10,7 +10,7 @@
 data-sample.json
 sample.json
 # production
-/build
+
 
 # misc
 .env
