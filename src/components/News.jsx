@@ -8,7 +8,7 @@ dotenv.config();
 function News(props) {
 	const { category, setProgress } = props;
 	// console.log(category);
-	console.log(setProgress);
+	// console.log(setProgress);
 
 	const [news, setNews] = useState([]);
 	const [page, setPage] = useState(1);
@@ -95,7 +95,7 @@ function News(props) {
 					))} */}
 
 					<div className="container is-fluid columns is-multiline is-centerd is-mobile is-desktop is-variable m-0">
-						{news.map((article) => {
+						{news.flatMap((article) => {
 							return (
 								<div
 									className="column is-12-mobile is-4-tablet is-one-fifth-desktop"
